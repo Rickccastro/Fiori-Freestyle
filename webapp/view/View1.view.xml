@@ -1,6 +1,7 @@
 <mvc:View controllerName="fiorifreestyle.controller.View1"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns:t="sap.ui.table"
+    xmlns:core="sap.ui.core"
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
         <Button text="Hello" press="onPress" />
@@ -10,10 +11,20 @@
             <Input />
         </VBox>
 
+         <VBox class="sapUiTinyMargin">
+            <Text text="{i18n>customerName}"/>
+         </VBox>
+
+         <Text core:require="{ formatMessage: 'sap/base/strings/formatMessage' }"
+            text="{ 
+                  parts:[ {path: 'i18n>welcomeMsg'}, {path:'user/name'} ], formatter:'formatMessage' }" />
+
+         <Button text="Show Message" press="onShowMessage"></Button>
+
         <t:Table id="table1" rows="{/HeaderSet}" visibleRowCount="10" threshold="10" class="sapUiTinyMargin" selectionMode="MultiToggle">
             <t:toolbar>
                 <OverflowToolbar>
-                    <Title id="title" text="Ordens" />
+                    <Title id="title" text="Orders" />
                 </OverflowToolbar>
             </t:toolbar>
 
