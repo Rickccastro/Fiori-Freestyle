@@ -5,6 +5,10 @@
     xmlns="sap.m">
     <Page id="page" title="{i18n>title}">
         <Button text="Hello" press="onPress" />
+      <VBox class="sapUiTinyMargin">
+        <Button text="View2" press="onView2"/>
+        <Button text="View3" press="onView3"/>
+      </VBox>
 
         <VBox class="sapUiTinyMargin">
             <Label text="Client Identification" />
@@ -17,7 +21,7 @@
 
          <Text core:require="{ formatMessage: 'sap/base/strings/formatMessage' }"
             text="{ 
-                  parts:[ {path: 'i18n>welcomeMsg'}, {path:'user/name'} ], formatter:'formatMessage' }" />
+                  parts:[ {path: 'i18n>welcomeMsg'}, {path:'{userModel>/user/name}'} ], formatter:'formatMessage' }" />
 
          <Button text="Show Message" press="onShowMessage"></Button>
 

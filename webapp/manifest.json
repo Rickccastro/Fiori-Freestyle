@@ -24,7 +24,11 @@
           "localUri": "localService/mainService/metadata.xml",
           "odataVersion": "2.0"
         }
-      }
+      },
+       "usersDataSource": {
+				"uri": "model/Users.json",
+				"type": "JSON"
+			}
     }
   },
   "sap.ui": {
@@ -63,6 +67,10 @@
           "bundleName": "fiorifreestyle.i18n.i18n"
         }
       },
+       "usersInManifest": {
+				"type": "sap.ui.model.json.JSONModel",
+				"dataSource": "usersDataSource"
+			},
       "": {
         "dataSource": "mainService",
         "preload": true,
@@ -93,7 +101,21 @@
           "target": [
             "TargetView1"
           ]
+        },
+         {
+          "name": "RouteView2",
+          "pattern": "view2",
+          "target": [
+            "TargetView2"
+          ]
+        },{
+          "name": "RouteView3",
+          "pattern": "view3",
+          "target": [
+            "TargetView3"
+          ]
         }
+
       ],
       "targets": {
         "TargetView1": {
@@ -102,7 +124,21 @@
           "clearControlAggregation": false,
           "viewId": "View1",
           "viewName": "View1"
-        }
+        },
+        "TargetView2": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "View2",
+          "viewName": "View2"
+        },
+        "TargetView3": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "View3",
+          "viewName": "View3"
+        }        
       }
     },
     "rootView": {
