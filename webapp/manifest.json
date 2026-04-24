@@ -130,6 +130,13 @@
           "target": [
             "TargetView5"
           ]
+        },
+         {
+          "name": "RouteFiltersPagesOrderPagination",
+          "pattern": "filtersPagesOrderPagination",
+          "target": [
+            "TargetView6"
+          ]
         }
       ],
       "targets": {
@@ -167,7 +174,14 @@
           "clearControlAggregation": false,
           "viewId": "FiltersPagesOrder",
           "viewName": "FiltersPagesOrder"
-        }       
+        },      
+        "TargetView6": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "FiltersPagesOrderPagination",
+          "viewName": "FiltersPagesOrderPagination"
+        }  
       }
     },
     "rootView": {

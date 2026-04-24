@@ -38,6 +38,10 @@ sap.ui.define(["sap/ui/core/mvc/Controller"], function (Controller) {
     onFiltersPagesOrder: function(){
       var r = sap.ui.core.UIComponent.getRouterFor(this)
       r.navTo("RouteFiltersPagesOrder")
+    },
+    onFiltersPagesOrderPagination: function(){
+      var r = sap.ui.core.UIComponent.getRouterFor(this)
+      r.navTo("RouteFiltersPagesOrderPagination")
     }
   });
 });
