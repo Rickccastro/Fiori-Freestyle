@@ -42,6 +42,14 @@ sap.ui.define(["sap/ui/core/mvc/Controller"], function (Controller) {
     onFiltersPagesOrderPagination: function(){
       var r = sap.ui.core.UIComponent.getRouterFor(this)
       r.navTo("RouteFiltersPagesOrderPagination")
+    },
+    onFormatters: function(){
+      var r = sap.ui.core.UIComponent.getRouterFor(this)
+      r.navTo("RouteFormatters")
+    },
+    onFragment: function(){
+      var r = sap.ui.core.UIComponent.getRouterFor(this)
+      r.navTo("RouteFragment")
     }
   });
 });

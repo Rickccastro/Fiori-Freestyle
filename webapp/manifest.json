@@ -137,6 +137,20 @@
           "target": [
             "TargetView6"
           ]
+        },
+        {
+          "name": "RouteFormatters",
+          "pattern": "formatters",
+          "target": [
+            "TargetView7"
+          ]
+        },
+        {
+          "name": "RouteFragment",
+          "pattern": "fragment",
+          "target": [
+            "TargetView8"
+          ]
         }
       ],
       "targets": {
@@ -181,7 +195,21 @@
           "clearControlAggregation": false,
           "viewId": "FiltersPagesOrderPagination",
           "viewName": "FiltersPagesOrderPagination"
-        }  
+        },
+        "TargetView7": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "Formatters",
+          "viewName": "Formatters"
+        },
+        "TargetView8": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "FragmentPage",
+          "viewName": "fragment.FragmentPage"
+        }     
       }
     },
     "rootView": {

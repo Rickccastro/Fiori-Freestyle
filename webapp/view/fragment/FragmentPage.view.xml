@@ -1,0 +1,17 @@
+<mvc:View controllerName="fiorifreestyle.controller.fragment.FragmentPage"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:core="sap.ui.core"
+    xmlns:t="sap.ui.table"
+	xmlns:fb="sap.ui.comp.filterbar"
+    xmlns="sap.m">
+    <Page id="page1" title="{i18n>title}">
+      
+	  	<core:Fragment fragmentName="fiorifreestyle.view.fragment.Header" type="XML" />
+
+	  	<VBox class="sapUiTinyMargin">
+			<Text text="Content"/>
+		</VBox>
+
+		<mvc:XMLView viewName="fiorifreestyle.view.fragment.Footer"/>
+    </Page>
+</mvc:View>

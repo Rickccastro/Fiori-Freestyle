@@ -1,0 +1,44 @@
+<mvc:View controllerName="fiorifreestyle.controller.Formatters"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns:t="sap.ui.table"
+    xmlns:core="sap.ui.core"
+    xmlns:fb="sap.ui.comp.filterbar"
+    xmlns="sap.m">
+    <Page id="page8" title="{i18n>title}">
+       	<VBox class="sapUiTinyMargin">
+			<Title text="Examples"/>
+			<Text text=""/>
+			
+			<Text text="Data: {data>/CreatedAt} → {path: 'data>/CreatedAt', type: 'sap.ui.model.type.DateTime', formatOptions: { UTC:false, pattern: 'dd/MM/yyyy HH:mm:ss'}}"/>
+			<Text text=""/>
+
+			<Text text="Preço: {data>/Price} → { path: 'data>/Price', formatter: '.formatter.formatPrice'}"/>
+			<Text text="{
+                    parts: ['data>/Preco','data>/Currency'],
+                    type: 'sap.ui.model.type.Currency',
+                    formatOptions: {
+                        groupingEnabled : true,
+						groupingSeparator: '.',
+						decimalSeparator: ',',
+						decimals: 2,
+						showMeasure: false
+                    }
+                }"/>
+			<Text text=""/>
+
+			<Text text="Status: {data>/Status} → { path: 'data>/Status', formatter: '.formatter.formatStatus'}"/>
+			<Text text=""/>
+
+			<Text text="CPF: {data>/CPF} → { path: 'data>/CPF', formatter: '.formatter.formatCPF'}"/>
+			<Text text=""/>
+
+			<Text text="Price (liveChange)"/>
+			<Input liveChange="onChangePrice"/>
+			<Text text=""/>
+
+			<Text text="Price (change)"/>
+			<Input change="onChangePrice"/>
+			<Text text=""/>
+		</VBox>
+    </Page>
+</mvc:View>
