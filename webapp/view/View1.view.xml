@@ -8,6 +8,8 @@
       <VBox class="sapUiTinyMargin">
         <Button text="View2" press="onView2"/>
         <Button text="View3" press="onView3"/>
+        <Button text="View4" press="onView4"/>
+        <Button text="Filters1" press="onFiltersPagesOrder"/>
       </VBox>
 
         <VBox class="sapUiTinyMargin">

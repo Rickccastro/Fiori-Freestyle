@@ -53,7 +53,8 @@
       "minUI5Version": "1.114.0",
       "libs": {
         "sap.m": {},
-        "sap.ui.core": {}
+        "sap.ui.core": {},
+        "sap.ui.comp": {}
       }
     },
     "contentDensities": {
@@ -108,14 +109,28 @@
           "target": [
             "TargetView2"
           ]
-        },{
+        },
+        {
           "name": "RouteView3",
           "pattern": "view3",
           "target": [
             "TargetView3"
           ]
+        },
+          {
+          "name": "RouteView4",
+          "pattern": "view4",
+          "target": [
+            "TargetView4"
+          ]
+        },
+         {
+          "name": "RouteFiltersPagesOrder",
+          "pattern": "filtersPagesOrder",
+          "target": [
+            "TargetView5"
+          ]
         }
-
       ],
       "targets": {
         "TargetView1": {
@@ -138,7 +153,21 @@
           "clearControlAggregation": false,
           "viewId": "View3",
           "viewName": "View3"
-        }        
+        },
+        "TargetView4": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "View4",
+          "viewName": "View4"
+        },
+         "TargetView5": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "FiltersPagesOrder",
+          "viewName": "FiltersPagesOrder"
+        }       
       }
     },
     "rootView": {

@@ -30,6 +30,14 @@ sap.ui.define(["sap/ui/core/mvc/Controller"], function (Controller) {
     onView3: function(){
       var r = sap.ui.core.UIComponent.getRouterFor(this)
       r.navTo("RouteView3")
+    },
+    onView4: function(){
+      var r = sap.ui.core.UIComponent.getRouterFor(this)
+      r.navTo("RouteView4")
+    },
+    onFiltersPagesOrder: function(){
+      var r = sap.ui.core.UIComponent.getRouterFor(this)
+      r.navTo("RouteFiltersPagesOrder")
     }
   });
 });
